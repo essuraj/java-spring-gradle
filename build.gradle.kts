@@ -18,9 +18,13 @@ subprojects {
 	repositories {
 		mavenCentral()
 	}
+	extra["springCloudVersion"] = "2023.0.3"
 
 	dependencies {
+		implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
 		implementation("org.springframework.boot:spring-boot-starter")
+		implementation("org.springframework.boot:spring-boot-starter-web")
+
 		testImplementation("org.springframework.boot:spring-boot-starter-test")
 		testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	}
@@ -30,6 +34,11 @@ subprojects {
 		}
 	}
 
+	dependencyManagement {
+		imports {
+			mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
+		}
+	}
 
 	tasks.withType<Test> {
 		useJUnitPlatform()
