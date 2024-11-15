@@ -1,4 +1,6 @@
 rootProject.name = "nms"
 
-include(":config")
-project(":config").projectDir = file("modules/config")
+include("modules:config")
+project(":modules:config").name = "config"
+include("modules:monitoring")
+findProject(":modules:monitoring")?.name = "monitoring"
