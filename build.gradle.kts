@@ -27,6 +27,24 @@ subprojects {
 
 		testImplementation("org.springframework.boot:spring-boot-starter-test")
 		testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+
+		implementation("org.springframework.boot:spring-boot-starter-actuator")
+
+		implementation("org.springframework.boot:spring-boot-starter-validation:3.3.4")
+
+		implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.6.0")
+
+		implementation("com.fasterxml.jackson.core:jackson-databind")
+
+
+		developmentOnly("org.springframework.boot:spring-boot-devtools")
+
+
+
+		// https://mvnrepository.com/artifact/org.projectlombok/lombok
+		compileOnly("org.projectlombok:lombok:1.18.34")
+
 	}
 	java {
 		toolchain {

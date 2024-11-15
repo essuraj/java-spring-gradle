@@ -11,3 +11,7 @@ findProject(":modules:common")?.name = "common"
 
 include("modules:service-registry")
 findProject(":modules:service-registry")?.name = "service-registry"
+include("modules:models")
+findProject(":modules:models")?.name = "models"
+include("modules:auth")
+findProject(":modules:auth")?.name = "auth"
