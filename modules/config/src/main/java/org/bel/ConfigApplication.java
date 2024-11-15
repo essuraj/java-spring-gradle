@@ -5,10 +5,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class NmsApplication {
+public class ConfigApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(NmsApplication.class, args);
+        SpringApplication.run(ConfigApplication.class, args);
     }
 
 }
