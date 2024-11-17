@@ -17,6 +17,9 @@ spring:
         enabled: true
 server:
   port: 8081
+  error:
+    path: /error
+    include-message: always
 eureka:
   client:
     serviceUrl:

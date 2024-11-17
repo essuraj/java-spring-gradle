@@ -5,7 +5,9 @@ plugins {
 }
 group = "org.bel"
 version = "0.0.1-SNAPSHOT"
-
+repositories {
+	mavenCentral()
+}
 subprojects {
 	apply(plugin = "java")
 	apply(plugin = "io.spring.dependency-management")
@@ -22,7 +24,7 @@ subprojects {
 
 	dependencies {
 		implementation("org.springframework.cloud:spring-cloud-starter-netflix-eureka-client")
-		implementation("org.springframework.boot:spring-boot-starter")
+//		implementation("org.springframework.boot:spring-boot-starter")
 		implementation("org.springframework.boot:spring-boot-starter-web")
 
 		testImplementation("org.springframework.boot:spring-boot-starter-test")
