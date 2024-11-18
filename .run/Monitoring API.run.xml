@@ -2,7 +2,7 @@
   <configuration default="false" name="Monitoring API" type="Application" factoryName="Application">
     <option name="ALTERNATIVE_JRE_PATH" value="temurin-21" />
     <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-    <option name="MAIN_CLASS_NAME" value="org.bel.MonitoringApplication" />
+    <option name="MAIN_CLASS_NAME" value="org.bel.monitoring.MonitoringApplication" />
     <module name="nms.modules.monitoring.main" />
     <method v="2">
       <option name="Make" enabled="true" />

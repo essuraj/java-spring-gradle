@@ -1,4 +1,4 @@
-package org.bel;
+package org.bel.monitoring;
 
 
 import org.springframework.boot.SpringApplication;
