@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Auth API" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="org.bel.auth.AuthApplication" />
+    <module name="nms.modules.auth.main" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

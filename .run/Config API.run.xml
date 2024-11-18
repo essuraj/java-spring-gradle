@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="Config API" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="org.bel.ConfigApplication" />
+    <option name="MAIN_CLASS_NAME" value="org.bel.config.ConfigApplication" />
     <module name="nms.modules.config.main" />
     <extension name="coverage">
       <pattern>

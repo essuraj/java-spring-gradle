@@ -46,8 +46,11 @@ subprojects {
 
 		// https://mvnrepository.com/artifact/org.projectlombok/lombok
 		compileOnly("org.projectlombok:lombok:1.18.34")
-
+		implementation("org.projectlombok:lombok")
+		annotationProcessor("org.projectlombok:lombok")
 	}
+
+
 	java {
 		toolchain {
 			languageVersion = JavaLanguageVersion.of(21)
