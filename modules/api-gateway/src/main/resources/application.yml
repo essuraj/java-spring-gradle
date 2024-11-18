@@ -1,17 +1,23 @@
 spring:
+  main:
+    web-application-type: reactive
   application:
     name: api-gateway
   cloud:
     gateway:
-      routes:
-        - id: nms-configuration
-          uri: lb://nms-configuration
-          predicates:
-            - Path=/c/**
-        - id: nms-monitoring
-          uri: lb://nms-monitoring
-          predicates:
-            - Path=/m/**
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+#      routes:
+#        - id: nms-configuration
+#          uri: lb://nms-configuration
+#          predicates:
+#            - Path=/c/**
+#        - id: nms-monitoring
+#          uri: lb://nms-monitoring
+#          predicates:
+#            - Path=/m/**
 server:
   port: 8080
 eureka:
