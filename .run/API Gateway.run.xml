@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="API Gateway" type="Application" factoryName="Application">
-    <option name="MAIN_CLASS_NAME" value="org.bel.APIGatewayApplication" />
+    <option name="MAIN_CLASS_NAME" value="org.bel.gateway.APIGatewayApplication" />
     <module name="nms.modules.api-gateway.main" />
     <method v="2">
       <option name="Make" enabled="true" />

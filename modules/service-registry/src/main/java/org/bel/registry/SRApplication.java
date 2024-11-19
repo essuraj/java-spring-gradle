@@ -1,4 +1,4 @@
-package org.bel;
+package org.bel.registry;
 
 
 import org.springframework.boot.SpringApplication;
